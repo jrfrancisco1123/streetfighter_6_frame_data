@@ -1,0 +1,316 @@
+* {
+    margin: 20px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(15, 15, 15, 0.5) 100%),url(../images/vs_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 20px auto;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(45, 45, 45, 0.5) 0%, rgba(72, 72, 72, 0.5) 100%),url(../images/sf6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 160px auto;
+    padding: 20px;
+    height: 850px;
+    width: 1500px;
+}
+
+.front h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.front p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.get-started {
+    background-color: #276df8;
+    color:#ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 40px;
+    padding: 14px;
+    width: 180px;
+}
+
+.top-corner {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+.top-corner a {
+    text-decoration: none;
+    font-size: 16px;
+    color: crimson;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+
+.login-box h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 40px;
+    margin: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.login-box .user-box label {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 5px 0;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    color: #ffffff;
+    font-size: 20px;
+    top: -50px;
+    left: 0;
+}
+
+/* Removes white autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff;
+}
+
+.alerts {
+    color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.intro {
+    border: 2px solid crimson;
+    border-radius: 10px;
+    color: gainsboro;
+    width: 2300px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.bison {
+    height: 40px;
+    position: relative;
+    bottom: 12px;
+}
+
+.char-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.6rem;
+    width: 2400px;
+}
+
+.char-links a {
+    display: block;
+    color: white;
+    font-family: fantasy;
+    font-size: 1.8rem;
+    text-decoration: none;
+    position: relative;
+    padding: 16px 20px;
+    
+    &:after {
+        display: block;
+        content: '';
+        height: 6px;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        left: 20px;
+        background-color: #ffffff;
+        z-index: -1;
+    }
+    
+    &:hover {
+        color: rgb(0, 0, 0);
+
+    &:after {
+        right: 0;
+        left: 0;
+        height: 125%;
+        }
+    }
+}
+
+.message-board {
+    background: url(../images/brick_wall.jpg);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 60px;
+    width: 2100px;
+    padding: 20px;
+}
+
+.message-board img {
+    height: 100px;
+    width: 580px;
+}
+
+.post {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.5) 0%, rgba(15, 15, 15, 0.5) 100%),url(../images/black_grafitti.jpg);
+    border: 2px solid gainsboro;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.post a {
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.form-section {
+    background: url(../images/black_grafitti.jpg);
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    width: 1200px;
+    margin: 300px auto;
+    padding: 20px;
+}
+
+input[name="subject"] {
+    width: 900px;
+}
+
+label {
+    font-size: 1.5em;
+    color: gainsboro;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form-section a {
+    text-decoration: none;
+    color: crimson;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.char-name {
+    font-family:fantasy;
+    font-style: italic;
+    font-size: 100px;
+    border: 2px solid gainsboro;
+    margin-top: 100px;
+    width: 1000px;
+}
+
+.titles {
+    height: 70px;
+    width: 700px;
+}
+
+.normals, .uniques, .specials, .supers, .throws, .commons {
+    font-size: 1.4rem;
+    width: 2000px;
+}
+
+.move-details {
+    color:rgb(255, 255, 121);
+    font-size: 18px;
+}
+
+.super-details {
+    color:rgb(158, 190, 253);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-l {
+    color:rgb(47, 249, 249);
+    font-weight: bold;
+}
+
+.btn-m {
+    color:rgb(251, 251, 46);
+    font-weight: bold;
+}
+
+.btn-h {
+    color: rgb(227, 12, 12);
+    font-weight: bold;
+}
+
+.btn-n {
+    color:rgb(221, 221, 221);
+    font-weight: bold;
+}
+
+td {
+    vertical-align:middle;
+    font-size: 1.5rem;
+}

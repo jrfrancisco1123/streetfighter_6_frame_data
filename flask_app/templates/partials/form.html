@@ -1,0 +1,20 @@
+<div class="form-section">
+    <a href="/dashboard">Dashboard</a>
+    <form action="/process/create" method="post">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" class="form-control">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" class="form-control" placeholder="What's on your mind..."></textarea>
+        <hr class="text-white">
+        <button class="get-started">Submit</button>
+        <div class="alerts"> 
+            {% with messages = get_flashed_messages(category_filter=['content']) %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </form>
+</div>

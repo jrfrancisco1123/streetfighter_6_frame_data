@@ -1,0 +1,28 @@
+<div class="message-board text-white">
+    <img src="static/images/message_board.png" alt="message board">
+    <div class="post">
+        <div class="creator">
+            <span class="text-danger">Posted By: dukesilver</span>
+        </div>
+        As a big fan of the Street Fighter franchise, I am really enjoying this game so much which in part inspired me to make this my project. Street Fighter 6 released 
+        in early June 2023 but there is still more to come. The developers at Capcom will continue to add more content to the game later down the line with new characters, 
+        balance changes, crossover events, and much more! I hope to add more content as well to the site as the game continues to evolve. Thank you for visiting the page &#128512;
+    </div>
+    {% for post in all_posts %}
+    <div>
+        <div class="post">
+            <div class="creator">
+                <span class="text-info">Posted by: {{ post.user.username }} </span>|
+                On: {{ post.updated_at.strftime('%b %d, %H:%M%p') }}
+            </div>
+            Subject: {{ post.subject }}
+            <hr>
+            {{ post.message }}
+            {% if post.user_id == current_user.id %}
+            <a href="/update/post/{{ post.id }}" class="card-link text-warning">Edit</a>
+            <a href="/delete/post/{{ post.id }}" class="card-link text-danger">Delete</a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

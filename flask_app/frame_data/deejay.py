@@ -1,0 +1,121 @@
+normals = {
+        'lp': ['4', '4-6', '6', ['4', '-1']],
+        'mp': ['7', '7-8', '13', ['5', '2']],
+        'hp': ['9', '9-14', '18', ['3', '-4']],
+        'lk': ['5', '5-6', '12', ['2', '-2']],
+        'mk': ['9', '9-11', '16', ['6', '-1']],
+        'hk': ['12', '12-14', '*22', ['1', '-5']],
+        'clp': ['5', '5-7', '8', ['4', '-1']],
+        'cmp': ['6', '6-9', '14', ['4', '-1']],
+        'chp': ['8', '8-9', '20', ['6', '-2']],
+        'clk': ['5', '5-6', '10', ['2', '-2']],
+        'cmk': ['8', '8-11', '19', ['', '-6']],
+        'chk': ['14', '14-23', '15', ['D', '-11']],
+        'jlp': ['4', '4-10', '3 frames after landing', ['', '']],
+        'jmp': ['6', '6-9', '3 frames after landing', ['', '']],
+        'jhp': ['9', '9-14', '3 frames after landing', ['', '']],
+        'jlk': ['4', '4-9', '3 frames after landing', ['', '']],
+        'jmk': ['8', '8-13', '3 frames after landing', ['', '']],
+        'jhk': ['10', '10-14', '3 frames after landing', ['', '']]
+    }
+
+uniques = {
+    'knee shot': ['6', '6 until landing', '3 frames after landing', ['', '']],
+    'sunrise heel': ['19', '19-23', '16', ['5', '1']],
+    'face breaker': ['7', '7-12', '20', ['1', '-5']],
+    'threebeat combo (2)': ['9', '9-11', '18', ['2', '-3']],
+    'threebeat combo (3)': ['14', '14-16', '21', ['2', '-8']],
+    'dee jay special (2)': ['11', '11-17', '24', ['-2', '-11']],
+    'dee jay special (3)': ['13', '13-15', '30', ['D', '-13']],
+    'funky dance (2)': ['12', '12-13', '17', ['2', '-2']],
+    'funky dance (3)': ['20', '20-21', '24', ['D', '-8']],
+    'funky dance feint': ['', '', '23 total frames', ['', '']],
+    'party in the air': ['8', '8-14', '3 frames after landing', ['', '']],
+    'speedy maracas': ['', '', '65 total frames', ['', '']]
+    }
+
+specials = {
+    'light air slasher': ['', '', '21 total frames', ['', '']],
+    'medium air slasher': ['17', '', '44 total frames', ['0', '-5']],
+    'heavy air slasher': ['17', '', '60 total frames', ['3', '-3']],
+    'od air slasher': ['10', '', '46 total frames', ['5', '2']],
+    'od air slasher (projectile)': ['22', '', '46 total frames', ['D', '9']],
+    'light jackknife maximum': ['', '', '6 frames after landing', ['', '']],
+    'medium jackknife maximum': ['6', '6-22', '22+10 frames after landing', ['D', '-32']],
+    'heavy jackknife maximum': ['6', '6-34', '17+15 frames after landing', ['D', '-44']],
+    'od jackknife maximum': ['6', '6-64', '29+18 frames after landing', ['D', '-55']],
+    'roll through feint': ['', '', '26 total frames', ['', '']],
+    'quick rolling sobat': ['12', '12-14', '23', ['D', '-6']],
+    'double rolling sobat': ['15', '15-39', '24', ['2', '-10']],
+    'od double rolling sobat': ['19', '19-32', '19', ['D', '-2']],
+    'light machine gun uppercut': ['15', '15-18', '35', ['D', '-19']],
+    'medium machine gun uppercut': ['22', '22-25', '35', ['D', '-19']],
+    'heavy machine gun uppercut': ['28', '28-31', '35', ['D', '-19']],
+    'od machine gun uppercut': ['28', '28-31', '35', ['D', '-19']],
+    'jus cool': ['', '', '37 total frames', ['', '']],
+    'od jus cool': ['8', '8-12', '36', ['D', '-29']],
+    'funky slicer (during jus cool)': ['12', '12-14', '22', ['2', '-15']],
+    'od funky slicer (during od jus cool)': ['9', '9-11', '19', ['6', '-2']],
+    'waning moon (during jus cool)': ['25', '25-27', '16', ['D', '1']],
+    'od waning moon (during od jus cool)': ['19', '19-23', '17', ['7', '-4']],
+    'maximum strike (during jus cool)': ['15', '15-19', '25', ['D', '-10']],
+    'od maximum strike (during od jus cool)': ['11', '11-15', '21', ['D', '-8']],
+    'juggling dash (during jus cool)': ['', '', '27 total frames', ['', '']],
+    'od juggling dash (during od jus cool)': ['', '', '22 total frames', ['', '']],
+    'juggling sway (during juggling dash)': ['', '', '29 total frames', ['', '']],
+    'od juggling sway (during od juggling dash)': ['', '', '22 total frames', ['', '']]
+}
+
+super_arts = {
+    'the greatest sobat': ['7', '7-10', '45', ['D', '-24']],
+    'lowkey sunrise festival': ['12', '12-16', '46', ['6', '-29']],
+    'lowkey sunrise festival (2)': ['11', '11-14', '24', ['6', '-7']],
+    'lowkey sunrise festival (3)': ['10', '10-11', '23', ['6', '-5']],
+    'lowkey sunrise festival (4)': ['12', '12-14', '23', ['6', '-5']],
+    'lowkey sunrise festival (5)': ['15', '15-18', '35', ['6', '-16']],
+    'lowkey sunrise festival (6)': ['17', '17-19', '45', ['6', '-22']],
+    'lowkey sunrise festival (7)': ['18', '18-28', '79', ['D', '-61']],
+    'marvelous sunrise festival': ['12', '12-16', '46', ['6', '-29']],
+    'marvelous sunrise festival (2)': ['11', '11-14', '24', ['6', '-7']],
+    'marvelous sunrise festival (3)': ['10', '10-11', '23', ['6', '-5']],
+    'marvelous sunrise festival (4)': ['12', '12-14', '23', ['6', '-5']],
+    'marvelous sunrise festival (5)': ['15', '15-18', '35', ['6', '-16']],
+    'marvelous sunrise festival (6)': ['17', '17-19', '45', ['6', '-22']],
+    'marvelous sunrise festival (7)': ['18', '18-28', '64', ['D', '-43']],
+    'headliner sunrise festival': ['12', '12-16', '46', ['6', '-29']],
+    'headliner sunrise festival (2)': ['11', '11-14', '24', ['6', '-7']],
+    'headliner sunrise festival (3)': ['10', '10-11', '23', ['6', '-5']],
+    'headliner sunrise festival (4)': ['12', '12-14', '23', ['6', '-5']],
+    'headliner sunrise festival (5)': ['15', '15-18', '35', ['6', '-16']],
+    'headliner sunrise festival (6)': ['17', '17-19', '45', ['6', '-22']],
+    'headliner sunrise festival (7)': ['18', '18-28', '64', ['D', '-43']],
+    'climactic strike (marvelous)': ['11', '11-97', '84', ['D', '-66']],
+    'climactic strike (headliner)': ['11', '11-97', '84', ['D', '-66']],
+    'encore beat (marvelous)': ['33', '33-39', '112', ['D', '-97']],
+    'encore beat (headliner)': ['33', '33-39', '112', ['D', '-97']],
+    'sunrise festival (2) (failed version)': ['11', '11-14', '24', ['6', '-7']],
+    'sunrise festival (3) (failed version)': ['10', '10-11', '23', ['6', '-5']],
+    'sunrise festival (4) (failed version)': ['12', '12-14', '23', ['6', '-5']],
+    'sunrise festival (5) (failed version)': ['15', '15-18', '35', ['6', '-16']],
+    'sunrise festival (6) (failed version)': ['17', '17-19', '45', ['6', '-22']],
+    'sunrise festival (7) (failed version)': ['18', '18-28', '64', ['D', '-43']],
+    'weekend pleasure': ['9', '9-13', '48', ['D', '-28']],
+    'weekend pleasure (under 25% vit)': ['9', '9-13', '48', ['D', '-28']]
+}
+
+throws = {
+    'diss track': ['5', '5-7', '23', ['D', '']],
+    'flip throw': ['5', '5-7', '23', ['D', '']]
+}
+
+commons = {
+    'forward dash': ['', '', '19 total frames', ['', '']],
+    'backward dash': ['', '', '23 total frames', ['', '']],
+    'drive impact': ['26', '26-27', '35', ['D', '-3']],
+    'drive reversal': ['24', '24-26', '26', ['D', '-8']],
+    'drive parry': ['1', '1-8', '29', ['', '']],
+    'perfect parry (strike)': ['1', '', '1', ['', '']],
+    'perfect parry (projectile)': ['1', '', '10', ['', '']],
+    'parry drive rush': ['', '', '55 total frames', ['', '']],
+    'cancel drive rush': ['', '', '55 total frames', ['', '']]
+}

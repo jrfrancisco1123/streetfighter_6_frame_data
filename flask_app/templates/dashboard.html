@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' crossorigin='anonymous'>
+    <title>Street Fighter 6 Frame Data</title>
+</head>
+<body>
+    <header>
+        <div class="top-corner">
+            <span class="text-warning">Welcome {{ current_user.username }}</span> <img src="/static/images/m-bison-charge.gif" alt="mbison" class="bison"> <a href="/signout"> Signout</a>
+        </div>
+    </header>
+    <main>
+        <div class="d-flex justify-content-center">
+            <img src="static/images/sf6logo.png" alt="sf6 title">
+        </div>
+        <div class="intro">
+            <p>
+                The term 'frame' in fighting games is used to represent the smallest unit of time. One frame is measured 1/60 of a second. Every action in Street Fighter 6 for 
+                a character such as walking, jumping, blocking, and attacking can all be measured in frames. In Street Fighter 6, every move in a characters command list has 
+                certain attributes associated with them called frame data. This is traditionally broken down to different attributes
+            </p>
+            <dl>
+                <ul>Startup frames: <span class="text-warning">The beginning portion of the move before it can make contact with your opponent</span></ul>
+                <ul>Active frames: <span class="text-warning">The portion where the move is active and can hit your opponent</span></ul>
+                <ul>Recovery frames: 
+                    <span class="text-warning">
+                        The end portion of the move that can no longer make contact with your opponent. During this time you cannot perform any other actions
+                    </span>
+                </ul>
+            </dl>
+            <p>
+                Frame data gives us the information about a characters move set whether if that move is fast or slow, if it's safe or unsafe against a blocking opponent, or 
+                what kind of effect it has when a move makes contact against your opponent. The properties for a move usually determines if it's more favorable than 
+                others as you may see during a match, your opponent can use that move frequently. It's not neccessary to memorize the data for all the characters but simply
+                knowing the properties of a particular move if it has a fast startup for example will allow you to act before your opponent thus putting you in an advantagous
+                position in battle
+            </p>
+        </div>
+        <div class="links">
+            <ul class="char-links">
+                <li><a href="/create">Post +</a></li>
+                <li><a href="/view/luke">Luke</a></li>
+                <li><a href="/view/jamie">Jamie</a></li>
+                <li><a href="/view/manon">Manon</a></li>
+                <li><a href="/view/kimberly">Kimberly</a></li>
+                <li><a href="/view/marisa">Marisa</a></li>
+                <li><a href="/view/lily">Lily</a></li>
+                <li><a href="/view/jp">JP</a></li>
+                <li><a href="/view/juri">Juri</a></li>
+                <li><a href="/view/deejay">Dee Jay</a></li>
+                <li><a href="/view/cammy">Cammy</a></li>
+                <li><a href="/view/ryu">Ryu</a></li>
+                <li><a href="/view/honda">E. Honda</a></li>
+                <li><a href="/view/blanka">Blanka</a></li>
+                <li><a href="/view/guile">Guile</a></li>
+                <li><a href="/view/ken">Ken</a></li>
+                <li><a href="/view/chunli">Chun-Li</a></li>
+                <li><a href="/view/zangief">Zangief</a></li>
+                <li><a href="/view/dhalsim">Dhalsim</a></li>
+                <li><a href="/view/rashid">Rashid</a></li>
+            </ul>
+        </div>
+        {% include "partials/board.html" %}
+    </main>
+</body>
+</html>
