@@ -1,7 +1,13 @@
 from flask_app import app
 from flask import render_template, session, redirect
 
-from flask_app.frame_data import blanka, cammy, chunli, deejay, dhalsim, guile, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+from flask_app.frame_data import aki, blanka, cammy, chunli, deejay, dhalsim, guile, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+
+@app.route('/view/aki')
+def view_aki():
+    if 'user_id' not in session:
+        return redirect('/')
+    return render_template('aki.html', normals=aki.normals, uniques=aki.uniques, specials=aki.specials, super_arts=aki.super_arts, throws=aki.throws, commons=aki.commons)
 
 @app.route('/view/blanka')
 def view_blanka():
