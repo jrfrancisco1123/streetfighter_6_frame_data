@@ -165,7 +165,7 @@ input:-webkit-autofill:active {
     flex-direction: row;
     list-style: none;
     font-size: 1.6rem;
-    width: 2400px;
+    width: 2500px;
 }
 
 .char-links a {

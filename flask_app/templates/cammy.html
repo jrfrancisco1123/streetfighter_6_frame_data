@@ -20,11 +20,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
                         <th>Hit</th>
                         <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,6 +39,7 @@
                         <td>{{ commons['forward dash'][2] }}</td>
                         <td>{{ commons['forward dash'][3][0] }}</td>
                         <td>{{ commons['forward dash'][3][1] }}</td>
+                        <td>{{ commons['forward dash'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -49,6 +51,7 @@
                         <td>{{ commons['backward dash'][2] }}</td>
                         <td>{{ commons['backward dash'][3][0] }}</td>
                         <td>{{ commons['backward dash'][3][1] }}</td>
+                        <td>{{ commons['backward dash'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -60,6 +63,7 @@
                         <td>{{ commons['drive impact'][2] }}</td>
                         <td>{{ commons['drive impact'][3][0] }}</td>
                         <td>{{ commons['drive impact'][3][1] }}</td>
+                        <td>{{ commons['drive impact'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -72,6 +76,7 @@
                         <td>{{ commons['drive reversal'][2] }}</td>
                         <td>{{ commons['drive reversal'][3][0] }}</td>
                         <td>{{ commons['drive reversal'][3][1] }}</td>
+                        <td>{{ commons['drive reversal'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -83,6 +88,7 @@
                         <td>{{ commons['drive parry'][2] }}</td>
                         <td>{{ commons['drive parry'][3][0] }}</td>
                         <td>{{ commons['drive parry'][3][1] }}</td>
+                        <td>{{ commons['drive parry'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -94,6 +100,7 @@
                         <td>{{ commons['perfect parry (strike)'][2] }}</td>
                         <td>{{ commons['perfect parry (strike)'][3][0] }}</td>
                         <td>{{ commons['perfect parry (strike)'][3][1] }}</td>
+                        <td>{{ commons['perfect parry (strike)'][4] }}</td>
                     </tr>
                     <tr>
                     <tr>
@@ -106,6 +113,7 @@
                         <td>{{ commons['perfect parry (projectile)'][2] }}</td>
                         <td>{{ commons['perfect parry (projectile)'][3][0] }}</td>
                         <td>{{ commons['perfect parry (projectile)'][3][1] }}</td>
+                        <td>{{ commons['perfect parry (projectile)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -118,6 +126,7 @@
                         <td>{{ commons['parry drive rush'][2] }}</td>
                         <td>{{ commons['parry drive rush'][3][0] }}</td>
                         <td>{{ commons['parry drive rush'][3][1] }}</td>
+                        <td>{{ commons['parry drive rush'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -130,6 +139,7 @@
                         <td>{{ commons['cancel drive rush'][2] }}</td>
                         <td>{{ commons['cancel drive rush'][3][0] }}</td>
                         <td>{{ commons['cancel drive rush'][3][1] }}</td>
+                        <td>{{ commons['cancel drive rush'][4] }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -140,11 +150,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
                         <th>Hit</th>
                         <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -158,6 +169,7 @@
                         <td>{{ normals.lp[2] }}</td>
                         <td>{{ normals.lp[3][0] }}</td>
                         <td>{{ normals.lp[3][1] }}</td>
+                        <td>{{ normals.lp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -169,6 +181,7 @@
                         <td>{{ normals.hp[2] }}</td>
                         <td>{{ normals.hp[3][0] }}</td>
                         <td>{{ normals.hp[3][1] }}</td>
+                        <td>{{ normals.hp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -180,6 +193,7 @@
                         <td>{{ normals.hp[2] }}</td>
                         <td>{{ normals.hp[3][0] }}</td>
                         <td>{{ normals.hp[3][1] }}</td>
+                        <td>{{ normals.hp[4] }}</td>
                     </tr>
                     <tr>                            
                         <td>
@@ -191,6 +205,7 @@
                         <td>{{ normals.lk[2] }}</td>
                         <td>{{ normals.lk[3][0] }}</td>
                         <td>{{ normals.lk[3][1] }}</td>
+                        <td>{{ normals.lk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -202,6 +217,7 @@
                         <td>{{ normals.mk[2] }}</td>
                         <td>{{ normals.mk[3][0] }}</td>
                         <td>{{ normals.mk[3][1] }}</td>
+                        <td>{{ normals.mk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -213,6 +229,7 @@
                         <td>{{ normals.hk[2] }}</td>
                         <td>{{ normals.hk[3][0] }}</td>
                         <td>{{ normals.hk[3][1] }}</td>
+                        <td>{{ normals.hk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -224,6 +241,7 @@
                         <td>{{ normals.clp[2] }}</td>
                         <td>{{ normals.clp[3][0] }}</td>
                         <td>{{ normals.clp[3][1] }}</td>
+                        <td>{{ normals.clp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -235,6 +253,7 @@
                         <td>{{ normals.cmp[2] }}</td>
                         <td>{{ normals.cmp[3][0] }}</td>
                         <td>{{ normals.cmp[3][1] }}</td>
+                        <td>{{ normals.cmp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -246,6 +265,7 @@
                         <td>{{ normals.chp[2] }}</td>
                         <td>{{ normals.chp[3][0] }}</td>
                         <td>{{ normals.chp[3][1] }}</td>
+                        <td>{{ normals.chp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -257,6 +277,7 @@
                         <td>{{ normals.clk[2] }}</td>
                         <td>{{ normals.clk[3][0] }}</td>
                         <td>{{ normals.clk[3][1] }}</td>
+                        <td>{{ normals.clk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -268,6 +289,7 @@
                         <td>{{ normals.cmk[2] }}</td>
                         <td>{{ normals.cmk[3][0] }}</td>
                         <td>{{ normals.cmk[3][1] }}</td>
+                        <td>{{ normals.cmk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -279,6 +301,7 @@
                         <td>{{ normals.chk[2] }}</td>
                         <td>{{ normals.chk[3][0] }}</td>
                         <td>{{ normals.chk[3][1] }}</td>
+                        <td>{{ normals.chk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -291,6 +314,7 @@
                         <td>{{ normals.jlp[2] }}</td>
                         <td>{{ normals.jlp[3][0] }}</td>
                         <td>{{ normals.jlp[3][1] }}</td>
+                        <td>{{ normals.jlp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -303,6 +327,7 @@
                         <td>{{ normals.jmp[2] }}</td>
                         <td>{{ normals.jmp[3][0] }}</td>
                         <td>{{ normals.jmp[3][1] }}</td>
+                        <td>{{ normals.jmp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -315,6 +340,7 @@
                         <td>{{ normals.jhp[2] }}</td>
                         <td>{{ normals.jhp[3][0] }}</td>
                         <td>{{ normals.jhp[3][1] }}</td>
+                        <td>{{ normals.jhp[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -327,6 +353,7 @@
                         <td>{{ normals.jlk[2] }}</td>
                         <td>{{ normals.jlk[3][0] }}</td>
                         <td>{{ normals.jlk[3][1] }}</td>
+                        <td>{{ normals.jlk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -339,6 +366,7 @@
                         <td>{{ normals.jmk[2] }}</td>
                         <td>{{ normals.jmk[3][0] }}</td>
                         <td>{{ normals.jmk[3][1] }}</td>
+                        <td>{{ normals.jmk[4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -351,6 +379,7 @@
                         <td>{{ normals.jhk[2] }}</td>
                         <td>{{ normals.jhk[3][0] }}</td>
                         <td>{{ normals.jhk[3][1] }}</td>
+                        <td>{{ normals.jhk[4] }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -361,11 +390,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
                         <th>Hit</th>
                         <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -379,6 +409,7 @@
                         <td>{{ uniques['lift uppercut'][2] }}</td>
                         <td>{{ uniques['lift uppercut'][3][0] }}</td>
                         <td>{{ uniques['lift uppercut'][3][1] }}</td>
+                        <td>{{ uniques['lift uppercut'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -390,6 +421,7 @@
                         <td>{{ uniques['delayed ripper'][2] }}</td>
                         <td>{{ uniques['delayed ripper'][3][0] }}</td>
                         <td>{{ uniques['delayed ripper'][3][1] }}</td>
+                        <td>{{ uniques['delayed ripper'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -401,6 +433,7 @@
                         <td>{{ uniques['assault blade'][2] }}</td>
                         <td>{{ uniques['assault blade'][3][0] }}</td>
                         <td>{{ uniques['assault blade'][3][1] }}</td>
+                        <td>{{ uniques['assault blade'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -412,6 +445,7 @@
                         <td>{{ uniques['lift combination'][2] }}</td>
                         <td>{{ uniques['lift combination'][3][0] }}</td>
                         <td>{{ uniques['lift combination'][3][1] }}</td>
+                        <td>{{ uniques['lift combination'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -423,6 +457,7 @@
                         <td>{{ uniques['swing combination'][2] }}</td>
                         <td>{{ uniques['swing combination'][3][0] }}</td>
                         <td>{{ uniques['swing combination'][3][1] }}</td>
+                        <td>{{ uniques['swing combination'][4] }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -433,9 +468,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
+                        <th>Hit</th>
+                        <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -450,6 +488,7 @@
                         <td>{{ specials['light spiral arrow'][2] }}</td>
                         <td>{{ specials['light spiral arrow'][3][0] }}</td>
                         <td>{{ specials['light spiral arrow'][3][1] }}</td>
+                        <td>{{ specials['light spiral arrow'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -462,6 +501,7 @@
                         <td>{{ specials['medium spiral arrow'][2] }}</td>
                         <td>{{ specials['medium spiral arrow'][3][0] }}</td>
                         <td>{{ specials['medium spiral arrow'][3][1] }}</td>
+                        <td>{{ specials['medium spiral arrow'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -474,6 +514,7 @@
                         <td>{{ specials['heavy spiral arrow'][2] }}</td>
                         <td>{{ specials['heavy spiral arrow'][3][0] }}</td>
                         <td>{{ specials['heavy spiral arrow'][3][1] }}</td>
+                        <td>{{ specials['heavy spiral arrow'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -487,6 +528,7 @@
                         <td>{{ specials['heavy spiral arrow (charged)'][2] }}</td>
                         <td>{{ specials['heavy spiral arrow (charged)'][3][0] }}</td>
                         <td>{{ specials['heavy spiral arrow (charged)'][3][1] }}</td>
+                        <td>{{ specials['heavy spiral arrow (charged)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -500,6 +542,7 @@
                         <td>{{ specials['od spiral arrow'][2] }}</td>
                         <td>{{ specials['od spiral arrow'][3][0] }}</td>
                         <td>{{ specials['od spiral arrow'][3][1] }}</td>
+                        <td>{{ specials['od spiral arrow'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -512,6 +555,7 @@
                         <td>{{ specials['light cannon spike'][2] }}</td>
                         <td>{{ specials['light cannon spike'][3][0] }}</td>
                         <td>{{ specials['light cannon spike'][3][1] }}</td>
+                        <td>{{ specials['light cannon spike'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -524,6 +568,7 @@
                         <td>{{ specials['medium cannon spike'][2] }}</td>
                         <td>{{ specials['medium cannon spike'][3][0] }}</td>
                         <td>{{ specials['medium cannon spike'][3][1] }}</td>
+                        <td>{{ specials['medium cannon spike'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -536,6 +581,7 @@
                         <td>{{ specials['heavy cannon spike'][2] }}</td>
                         <td>{{ specials['heavy cannon spike'][3][0] }}</td>
                         <td>{{ specials['heavy cannon spike'][3][1] }}</td>
+                        <td>{{ specials['heavy cannon spike'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -549,6 +595,7 @@
                         <td>{{ specials['heavy cannon spike (charged)'][2] }}</td>
                         <td>{{ specials['heavy cannon spike (charged)'][3][0] }}</td>
                         <td>{{ specials['heavy cannon spike (charged)'][3][1] }}</td>
+                        <td>{{ specials['heavy cannon spike (charged)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -561,6 +608,7 @@
                         <td>{{ specials['od cannon spike'][2] }}</td>
                         <td>{{ specials['od cannon spike'][3][0] }}</td>
                         <td>{{ specials['od cannon spike'][3][1] }}</td>
+                        <td>{{ specials['od cannon spike'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -573,6 +621,7 @@
                         <td>{{ specials['light quick spin knuckle'][2] }}</td>
                         <td>{{ specials['light quick spin knuckle'][3][0] }}</td>
                         <td>{{ specials['light quick spin knuckle'][3][1] }}</td>
+                        <td>{{ specials['light quick spin knuckle'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -585,6 +634,7 @@
                         <td>{{ specials['medium quick spin knuckle'][2] }}</td>
                         <td>{{ specials['medium quick spin knuckle'][3][0] }}</td>
                         <td>{{ specials['medium quick spin knuckle'][3][1] }}</td>
+                        <td>{{ specials['medium quick spin knuckle'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -597,6 +647,7 @@
                         <td>{{ specials['heavy quick spin knuckle'][2] }}</td>
                         <td>{{ specials['heavy quick spin knuckle'][3][0] }}</td>
                         <td>{{ specials['heavy quick spin knuckle'][3][1] }}</td>
+                        <td>{{ specials['heavy quick spin knuckle'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -609,6 +660,7 @@
                         <td>{{ specials['od quick spin knuckle'][2] }}</td>
                         <td>{{ specials['od quick spin knuckle'][3][0] }}</td>
                         <td>{{ specials['od quick spin knuckle'][3][1] }}</td>
+                        <td>{{ specials['od quick spin knuckle'][4] }}</td>
                     </tr>
                         <td>
                             Cannon Strike 
@@ -621,6 +673,7 @@
                         <td>{{ specials['cannon strike (during forward jump)'][2] }}</td>
                         <td>{{ specials['cannon strike (during forward jump)'][3][0] }}</td>
                         <td>{{ specials['cannon strike (during forward jump)'][3][1] }}</td>
+                        <td>{{ specials['cannon strike (during forward jump)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -634,6 +687,7 @@
                         <td>{{ specials['od cannon strike (during forward jump)'][2] }}</td>
                         <td>{{ specials['od cannon strike (during forward jump)'][3][0] }}</td>
                         <td>{{ specials['od cannon strike (during forward jump)'][3][1] }}</td>
+                        <td>{{ specials['od cannon strike (during forward jump)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -646,6 +700,7 @@
                         <td>{{ specials['hooligan combination'][2] }}</td>
                         <td>{{ specials['hooligan combination'][3][0] }}</td>
                         <td>{{ specials['hooligan combination'][3][1] }}</td>
+                        <td>{{ specials['hooligan combination'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -659,6 +714,7 @@
                         <td>{{ specials['hooligan combination (charged)'][2] }}</td>
                         <td>{{ specials['hooligan combination (charged)'][3][0] }}</td>
                         <td>{{ specials['hooligan combination (charged)'][3][1] }}</td>
+                        <td>{{ specials['hooligan combination (charged)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -671,6 +727,7 @@
                         <td>{{ specials['od hooligan combination'][2] }}</td>
                         <td>{{ specials['od hooligan combination'][3][0] }}</td>
                         <td>{{ specials['od hooligan combination'][3][1] }}</td>
+                        <td>{{ specials['od hooligan combination'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -682,6 +739,7 @@
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][2] }}</td>
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][3][0] }}</td>
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][3][1] }}</td>
+                        <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -693,6 +751,7 @@
                         <td>{{ specials['razors edge slicer (charged) (during hooligan combination) (no input)'][2] }}</td>
                         <td>{{ specials['razors edge slicer (charged) (during hooligan combination) (no input)'][3][0] }}</td>
                         <td>{{ specials['razors edge slicer (charged) (during hooligan combination) (no input)'][3][1] }}</td>
+                        <td>{{ specials['razors edge slicer (charged) (during hooligan combination) (no input)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -704,6 +763,7 @@
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][2] }}</td>
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][3][0] }}</td>
                         <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][3][1] }}</td>
+                        <td>{{ specials['razors edge slicer (during hooligan combination) (no input)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -716,6 +776,7 @@
                         <td>{{ specials['cannon strike (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['cannon strike (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['cannon strike (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['cannon strike (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -728,6 +789,7 @@
                         <td>{{ specials['cannon strike (charged) (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['cannon strike (charged) (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['cannon strike (charged) (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['cannon strike (charged) (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -740,6 +802,7 @@
                         <td>{{ specials['od cannon strike (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['od cannon strike (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['od cannon strike (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['od cannon strike (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -752,6 +815,7 @@
                         <td>{{ specials['reverse edge (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['reverse edge (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['reverse edge (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['reverse edge (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -764,6 +828,7 @@
                         <td>{{ specials['reverse edge (charged) (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['reverse edge (charged) (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['reverse edge (charged) (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['reverse edge (charged) (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -776,6 +841,7 @@
                         <td>{{ specials['od reverse edge (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['od reverse edge (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['od reverse edge (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['od reverse edge (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -788,6 +854,7 @@
                         <td>{{ specials['fatal leg twister (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['fatal leg twister (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['fatal leg twister (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['fatal leg twister (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -800,6 +867,7 @@
                         <td>{{ specials['fatal leg twister (charged) (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['fatal leg twister (charged) (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['fatal leg twister (charged) (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['fatal leg twister (charged) (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -812,6 +880,7 @@
                         <td>{{ specials['od fatal leg twister (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['od fatal leg twister (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['od fatal leg twister (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['od fatal leg twister (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -824,6 +893,7 @@
                         <td>{{ specials['silent step (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['silent step (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['silent step (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['silent step (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -836,6 +906,7 @@
                         <td>{{ specials['silent step (charged) (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['silent step (charged) (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['silent step (charged) (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['silent step (charged) (during hooligan combination)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -848,6 +919,7 @@
                         <td>{{ specials['od silent step (during hooligan combination)'][2] }}</td>
                         <td>{{ specials['od silent step (during hooligan combination)'][3][0] }}</td>
                         <td>{{ specials['od silent step (during hooligan combination)'][3][1] }}</td>
+                        <td>{{ specials['od silent step (during hooligan combination)'][4] }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -858,11 +930,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
                         <th>Hit</th>
                         <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -878,6 +951,7 @@
                         <td>{{ super_arts['spin drive smasher'][2] }}</td>
                         <td>{{ super_arts['spin drive smasher'][3][0] }}</td>
                         <td>{{ super_arts['spin drive smasher'][3][1] }}</td>
+                        <td>{{ super_arts['spin drive smasher'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -891,6 +965,7 @@
                         <td>{{ super_arts['killer bee spin'][2] }}</td>
                         <td>{{ super_arts['killer bee spin'][3][0] }}</td>
                         <td>{{ super_arts['killer bee spin'][3][1] }}</td>
+                        <td>{{ super_arts['killer bee spin'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -905,6 +980,7 @@
                         <td>{{ super_arts['killer bee spin (during forward jump)'][2] }}</td>
                         <td>{{ super_arts['killer bee spin (during forward jump)'][3][0] }}</td>
                         <td>{{ super_arts['killer bee spin (during forward jump)'][3][1] }}</td>
+                        <td>{{ super_arts['killer bee spin (during forward jump)'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -918,6 +994,7 @@
                         <td>{{ super_arts['delta red assault'][2] }}</td>
                         <td>{{ super_arts['delta red assault'][3][0] }}</td>
                         <td>{{ super_arts['delta red assault'][3][1] }}</td>
+                        <td>{{ super_arts['delta red assault'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -932,6 +1009,7 @@
                         <td>{{ super_arts['delta red assault'][2] }}</td>
                         <td>{{ super_arts['delta red assault'][3][0] }}</td>
                         <td>{{ super_arts['delta red assault'][3][1] }}</td>
+                        <td>{{ super_arts['delta red assault'][4] }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -942,11 +1020,12 @@
                 <thead class="text-danger">
                     <tr>
                         <th></th>
-                        <th>Startup</th>
-                        <th>Active</th>
-                        <th>Recovery</th>
+                        <th class="text-info">Startup</th>
+                        <th class="text-success">Active</th>
+                        <th class="text-primary">Recovery</th>
                         <th>Hit</th>
                         <th>Block</th>
+                        <th class="text-warning">Damage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -961,6 +1040,7 @@
                         <td>{{ throws['rough landing'][2] }}</td>
                         <td>{{ throws['rough landing'][3][0] }}</td>
                         <td>{{ throws['rough landing'][3][1] }}</td>
+                        <td>{{ throws['rough landing'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -973,6 +1053,7 @@
                         <td>{{ throws['delta throw'][2] }}</td>
                         <td>{{ throws['delta throw'][3][0] }}</td>
                         <td>{{ throws['delta throw'][3][1] }}</td>
+                        <td>{{ throws['delta throw'][4] }}</td>
                     </tr>
                     <tr>
                         <td>
@@ -985,6 +1066,7 @@
                         <td>{{ throws['leg scissors choke (airborne)'][2] }}</td>
                         <td>{{ throws['leg scissors choke (airborne)'][3][0] }}</td>
                         <td>{{ throws['leg scissors choke (airborne)'][3][1] }}</td>
+                        <td>{{ throws['leg scissors choke (airborne)'][4] }}</td>
                     </tr>
                 </tbody>
             </table>
