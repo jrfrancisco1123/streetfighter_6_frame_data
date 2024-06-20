@@ -1,7 +1,7 @@
 from flask_app import app
 from flask import render_template, session, redirect
 
-from flask_app.frame_data import aki, blanka, cammy, chunli, deejay, dhalsim, guile, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+from flask_app.frame_data import aki, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
 
 @app.route('/view/aki')
 def view_aki():
@@ -38,6 +38,12 @@ def view_dhalsim():
     if 'user_id' not in session:
         return redirect('/')
     return render_template('dhalsim.html', normals=dhalsim.normals, uniques=dhalsim.uniques, specials=dhalsim.specials, super_arts=dhalsim.super_arts, throws=dhalsim.throws, commons=dhalsim.commons)
+
+@app.route('/view/ed')
+def view_ed():
+    if 'user_id' not in session:
+        return redirect('/')
+    return render_template('ed.html', normals=ed.normals, uniques=ed.uniques, specials=ed.specials, super_arts=ed.super_arts, throws=ed.throws, commons=ed.commons)
 
 @app.route('/view/guile')
 def view_guile():

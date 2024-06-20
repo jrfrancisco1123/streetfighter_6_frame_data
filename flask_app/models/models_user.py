@@ -31,7 +31,7 @@ class User:
             return False
         return cls(results[0])
     
-    #GET ID
+    # GET ID
     @classmethod
     def get_id(cls, data):
         query = "SELECT * FROM users WHERE id = %(id)s"

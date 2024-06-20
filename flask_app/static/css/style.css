@@ -161,11 +161,11 @@ input:-webkit-autofill:active {
 
 .char-links {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     font-size: 1.6rem;
-    width: 2500px;
+    width: 2300px;
 }
 
 .char-links a {
@@ -260,13 +260,26 @@ button:hover {
     color: black;
 }
 
+.char-box {
+    height: 300px;
+    width: 1400px;
+    border-radius: 15px;
+}
+
 .char-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family:fantasy;
     font-style: italic;
     font-size: 100px;
-    border: 2px solid gainsboro;
-    margin-top: 100px;
-    width: 1000px;
+    letter-spacing: 4px;
+    color: black;
+    border: 4px solid gainsboro;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 300px;
+    width: 1400px;
 }
 
 .titles {
