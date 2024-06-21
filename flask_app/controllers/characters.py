@@ -1,13 +1,25 @@
 from flask_app import app
 from flask import render_template, session, redirect
 
-from flask_app.frame_data import aki, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+from flask_app.frame_data import aki, akuma, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
 
 @app.route('/view/aki')
 def view_aki():
     if 'user_id' not in session:
         return redirect('/')
     return render_template('aki.html', normals=aki.normals, uniques=aki.uniques, specials=aki.specials, super_arts=aki.super_arts, throws=aki.throws, commons=aki.commons)
+
+@app.route('/view/akuma')
+def view_akuma():
+    if 'user_id' not in session:
+        return redirect('/')
+    return render_template('akuma.html', normals=akuma.normals, uniques=akuma.uniques, specials=akuma.specials, super_arts=akuma.super_arts, throws=akuma.throws, commons=akuma.commons)
+
+@app.route('/view/bison')
+def view_bison():
+    if 'user_id' not in session:
+        return('/')
+    return render_template('bison.html')
 
 @app.route('/view/blanka')
 def view_blanka():

@@ -129,5 +129,16 @@
         <li><a href="/view/ed">Ed</a></li>
         {% endif %}
 
+        {% if request.path == 'view/akuma' %}
+            {{ disabled }}
+        {% else %}
+        <li><a href="/view/akuma">Akuma</a></li>
+        {% endif %}
+
+        {% if request.path == 'view/bison' %}
+            {{ disabled }}
+        {% else %}
+        <li><a href="/view/bison">M. Bison</a></li>
+        {% endif %}
     </ul>
 </div>
