@@ -1,7 +1,7 @@
 from flask_app import app
 from flask import render_template, session, redirect
 
-from flask_app.frame_data import aki, akuma, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+from flask_app.frame_data import aki, akuma, bison, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
 
 @app.route('/view/aki')
 def view_aki():
@@ -19,7 +19,7 @@ def view_akuma():
 def view_bison():
     if 'user_id' not in session:
         return('/')
-    return render_template('bison.html')
+    return render_template('bison.html', normals=bison.normals, uniques=bison.uniques, specials=bison.specials, super_arts=bison.super_arts, throws=bison.throws, commons=bison.commons)
 
 @app.route('/view/blanka')
 def view_blanka():

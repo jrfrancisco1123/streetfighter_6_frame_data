@@ -20,7 +20,7 @@ normals = {
 }
 
 uniques = {
-    'skull splitter': ['20', '20-24', '18', ['3', '-1'], '600', 'MidHigh'],
+    'skull splitter': ['20', '20-24', '18', ['3', '-1'], '600', 'Mid-High'],
     'resso snap kick': ['10', '10-12', '18', ['5', '4'], '700', 'High'],
     'rago high kick': ['12', '12-16', '27', ['D', '-15'], '800', 'High'],
     'viscera piercer': ['7', '7-9', '21', ['-1', '-6'], '700', 'High'], 
