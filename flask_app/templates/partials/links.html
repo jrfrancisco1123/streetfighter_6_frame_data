@@ -140,5 +140,11 @@
         {% else %}
         <li><a href="/view/bison">M. Bison</a></li>
         {% endif %}
+
+        {% if request.path == 'view/terry' %}
+            {{ disabled}}
+        {% else %}
+        <li><a href="/view/terry">Terry</a></li>
+        {% endif %}
     </ul>
 </div>

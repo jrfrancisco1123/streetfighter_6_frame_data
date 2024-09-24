@@ -1,7 +1,7 @@
 from flask_app import app
 from flask import render_template, session, redirect
 
-from flask_app.frame_data import aki, akuma, bison, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, zangief
+from flask_app.frame_data import aki, akuma, bison, blanka, cammy, chunli, deejay, dhalsim, guile, ed, honda, jamie, jp, juri, ken, kimberly, lily, luke, manon, marisa, rashid, ryu, terry, zangief
 
 @app.route('/view/aki')
 def view_aki():
@@ -132,6 +132,10 @@ def view_ryu():
 @app.route('/view/rashid')
 def view_rashid():
     return render_template('rashid.html', normals=rashid.normals, uniques=rashid.uniques, specials=rashid.specials, super_arts=rashid.super_arts, throws=rashid.throws, commons=rashid.commons)
+
+@app.route('/view/terry')
+def view_terry():
+    return render_template('terry.html', normals=terry.normals, uniques=terry.uniques, specials=terry.specials, super_arts=terry.super_arts, throws=terry.throws, commons=terry.commons)
 
 @app.route('/view/zangief')
 def view_zangief():
